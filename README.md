@@ -7,7 +7,7 @@ One-page landing page for Vo AI travel agency management platform.
 - **Framework:** Next.js 14.2.x (App Router)
 - **Language:** TypeScript (strict mode)
 - **Styling:** Tailwind CSS v4
-- **Fonts:** Inter (body), Fugi (headings)
+- **Fonts:** Inter (body), EditorsNote (headings)
 
 ## Project Structure
 
@@ -62,7 +62,7 @@ npm start
 
 - Node.js 18+
 - All images must be in `/public/images/` (referenced as `/images/` in code)
-- Fugi font files loaded via @font-face in globals.css
+- EditorsNote font files loaded via @font-face in globals.css
 
 ## Quality Gates
 

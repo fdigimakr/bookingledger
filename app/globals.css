@@ -3,21 +3,29 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Embedded Fugi font-face declarations with correct paths */
+/* EditorsNote Font - Light */
 @font-face {
-  font-family: "Fugi";
-  src: url("/assets/fonts/Fugi.woff2") format("woff2"), url("/assets/fonts/Fugi.woff") format("woff"),
-    url("/assets/fonts/Fugi.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "EditorsNote";
+  src: url("/assets/editors-note-font-family/EditorsNote-Light-iF664322be5b734.otf") format("opentype");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
+/* EditorsNote Font - Regular */
 @font-face {
-  font-family: "Fugi";
-  src: url("/assets/fonts/Fugi_1.woff2") format("woff2"), url("/assets/fonts/Fugi_1.woff") format("woff"),
-    url("/assets/fonts/Fugi_1.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "EditorsNote";
+  src: url("/assets/editors-note-font-family/EditorsNote-Regular-iF664322be6e849.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* EditorsNote Font - Semibold */
+@font-face {
+  font-family: "EditorsNote";
+  src: url("/assets/editors-note-font-family/EditorsNote-Semibold-iF664322be731c3.otf") format("opentype");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -130,7 +138,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-heading: "Fugi", ui-serif, Georgia, serif;
+  --font-heading: "EditorsNote", ui-serif, Georgia, serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -199,7 +207,7 @@
   }
 
   100% {
-    transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-25%, 0, 0);
   }
 }
 

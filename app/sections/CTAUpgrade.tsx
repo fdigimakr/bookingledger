@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function CTAUpgrade() {
   return (
@@ -17,17 +18,22 @@ export default function CTAUpgrade() {
                 Bring order, visibility & revenue clarity to your travel business.
               </p>
               <div className="space-y-4 flex flex-col items-center lg:items-start">
-                <button className="relative w-48 h-22 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
+                <Link href="/signup" className="relative w-48 h-22 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 block">
                   <Image
                     src="/images/CTA-Button-grey.svg"
                     alt="Start Free Trial"
                     fill
                     className="object-contain object-center lg:object-left"
                   />
-                </button>
-                <button className="block text-[#2F2F2F]/80 hover:text-[#2F2F2F] transition-colors cursor-pointer -mt-5 xl:pl-3">
+                </Link>
+                <a 
+                  href="https://cal.com/flomotive/booking-ledger-demo" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-[#2F2F2F]/80 hover:text-[#2F2F2F] transition-colors cursor-pointer -mt-5 xl:pl-3"
+                >
                   Book A Demo
-                </button>
+                </a>
               </div>
             </div>
 

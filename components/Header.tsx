@@ -73,20 +73,24 @@ export default function Header() {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button
-              variant="secondary"
-              size="sm"
-              className="rounded-full px-6 hover:bg-gradient-to-b hover:from-white hover:to-orange-50 transition-all duration-300 cursor-pointer"
-            >
-              Sign Up
-            </Button>
-            <Button
-              variant="secondary"
-              size="sm"
-              className="rounded-full px-6 hover:bg-gradient-to-b hover:from-white hover:to-orange-50 transition-all duration-300 cursor-pointer"
-            >
-              Login
-            </Button>
+            <Link href="/signup">
+              <Button
+                variant="secondary"
+                size="sm"
+                className="rounded-full px-6 hover:bg-gradient-to-b hover:from-white hover:to-orange-50 transition-all duration-300 cursor-pointer"
+              >
+                Sign Up
+              </Button>
+            </Link>
+            <Link href="/login">
+              <Button
+                variant="secondary"
+                size="sm"
+                className="rounded-full px-6 hover:bg-gradient-to-b hover:from-white hover:to-orange-50 transition-all duration-300 cursor-pointer"
+              >
+                Login
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -146,20 +150,24 @@ export default function Header() {
               Contact
             </Link>
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
-              <Button
-                variant="secondary"
-                size="sm"
-                className="w-full rounded-full hover:bg-gradient-to-b hover:from-white hover:to-orange-50 transition-all duration-300 cursor-pointer"
-              >
-                Sign Up
-              </Button>
-              <Button
-                variant="secondary"
-                size="sm"
-                className="w-full rounded-full hover:bg-gradient-to-b hover:from-white hover:to-orange-50 transition-all duration-300 cursor-pointer"
-              >
-                Login
-              </Button>
+              <Link href="/signup" onClick={() => setMobileMenuOpen(false)}>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="w-full rounded-full hover:bg-gradient-to-b hover:from-white hover:to-orange-50 transition-all duration-300 cursor-pointer"
+                >
+                  Sign Up
+                </Button>
+              </Link>
+              <Link href="/login" onClick={() => setMobileMenuOpen(false)}>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="w-full rounded-full hover:bg-gradient-to-b hover:from-white hover:to-orange-50 transition-all duration-300 cursor-pointer"
+                >
+                  Login
+                </Button>
+              </Link>
             </div>
           </nav>
         </div>

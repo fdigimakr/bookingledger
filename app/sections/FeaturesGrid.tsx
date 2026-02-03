@@ -120,7 +120,7 @@ export default function FeaturesGrid() {
                     />
                   </div>
                 <div>
-                  <h3 className="text-lg font-heading font-semibold text-[#2F2F2F] mb-2">{feature.title}</h3>
+                  <h3 className="text-lg font-heading text-[#2F2F2F] mb-2">{feature.title}</h3>
                   <p className="text-[#666666] text-sm leading-relaxed">{feature.description}</p>
                 </div>
                 </div>

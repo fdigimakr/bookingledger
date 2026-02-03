@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Pricing() {
   const [isAnnual, setIsAnnual] = useState(false)
@@ -157,13 +158,18 @@ export default function Pricing() {
                 </ul>
 
                 <div className="space-y-2 md:space-y-3">
-                  <button className="w-full relative h-12 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                  <Link href="/signup" className="w-full relative h-12 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer block">
                     <Image src={plan.ctaImage || "/placeholder.svg"} alt={plan.cta} fill className="object-contain" />
-                  </button>
+                  </Link>
                   {plan.bookDemo && (
-                    <button className="w-full text-sm text-[#7E7E7E] hover:text-black transition-colors cursor-pointer">
+                    <a 
+                      href="https://cal.com/flomotive/booking-ledger-demo" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="w-full text-sm text-[#7E7E7E] hover:text-black transition-colors cursor-pointer block text-center"
+                    >
                       Book A Demo
-                    </button>
+                    </a>
                   )}
                 </div>
               </div>

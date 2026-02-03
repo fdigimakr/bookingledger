@@ -11,7 +11,7 @@ export default function Footer() {
               <Image src="/images/logo.svg" alt="BookingLedger" width={210} height={40} />
             </div>
             <p className="text-sm text-[#7E7E7E] leading-relaxed">
-              Built for travel agencies and solo agents who need clarity, not clutter—giving you control, visibility,
+              Built for travel agencies and solo agents who need clarity, not clutter - giving you control, visibility,
               and peace of mind.
             </p>
           </div>
@@ -47,18 +47,18 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="tel:+1123456789"
+                  href="tel:+15552345678"
                   className="text-sm text-[#7E7E7E] hover:text-black transition-colors cursor-pointer"
                 >
-                  +1 123 456 789
+                  +1 (555) 234-5678
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:contact@email.com"
+                  href="mailto:contact@bookingledger.com"
                   className="text-sm text-[#7E7E7E] hover:text-black transition-colors cursor-pointer"
                 >
-                  contact@email.com
+                  contact@bookingledger.com
                 </a>
               </li>
             </ul>
@@ -67,7 +67,7 @@ export default function Footer() {
 
         {/* Bottom - Copyright and Privacy */}
         <div className="border-t border-[#EDEDED] pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <p className="text-sm text-[#7E7E7E]">© 2025 BookingLedger. All Rights Reserved</p>
+          <p className="text-sm text-[#7E7E7E]">© 2026 BookingLedger. All Rights Reserved</p>
           <a href="#" className="text-sm text-[#7E7E7E] hover:text-black transition-colors cursor-pointer">
             Privacy Policy
           </a>

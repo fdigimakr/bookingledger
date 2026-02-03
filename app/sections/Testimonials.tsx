@@ -9,7 +9,7 @@ export default function Testimonials() {
       name: "Rachel Kim",
       title: "CEO, Travel Agency, ABC",
       image: "/images/testimonial1.webp",
-      text: "BookingLedger replaced a patchwork of spreadsheets, emails, and forms. Now our whole pipeline—leads, clients, bookings, payments—is visible in one place. It saves us hours every week.",
+      text: "BookingLedger replaced a patchwork of spreadsheets, emails, and forms. Now our whole pipeline - leads, clients, bookings, payments - is visible in one place. It saves us hours every week.",
       rating: 5,
     },
     {
@@ -23,7 +23,7 @@ export default function Testimonials() {
       name: "Priya V",
       title: "GM, Travel Agency, XYZ",
       image: "/images/testimonial3.webp",
-      text: "Our managers can see exactly how agents are performing, what revenue is coming in, and where costs sit—all without digging. BookingLedger gave us both control and confidence.",
+      text: "Our managers can see exactly how agents are performing, what revenue is coming in, and where costs sit - all without digging. BookingLedger gave us both control and confidence.",
       rating: 5,
     },
   ]

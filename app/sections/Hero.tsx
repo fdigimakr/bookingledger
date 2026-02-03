@@ -1,5 +1,6 @@
 import Container from "@/components/ui/Container"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -13,12 +14,16 @@ export default function Hero() {
           {/* Main Headline */}
           <h1
             id="hero-heading"
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-heading mb-6 text-balance leading-[1.1] animate-fade-in"
-            style={{ fontFamily: "Fugi, serif" }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] mb-6 text-balance leading-[1.1] animate-fade-in"
             data-aos="fade-up"
             data-aos-duration="800"
           >
-            Run Your Whole Travel Agency With 1 Tool
+            <span style={{ fontFamily: "EditorsNote, serif", fontWeight: 300 }}>
+              Run Your Whole Travel Agency
+            </span>{" "}
+            <span style={{ fontFamily: "EditorsNote, serif", fontWeight: 600 }}>
+              With 1 Tool
+            </span>
           </h1>
 
           {/* Subheadline */}
@@ -38,7 +43,7 @@ export default function Hero() {
             data-aos-duration="800"
             data-aos-delay="200"
           >
-            <button className="relative group cursor-pointer">
+            <Link href="/signup" className="relative group cursor-pointer inline-block">
               <Image
                 src="/images/CTA-Button-orange.svg"
                 alt="Start Free Trial"
@@ -46,10 +51,15 @@ export default function Hero() {
                 height={56}
                 className="transition-transform group-hover:scale-105"
               />
-            </button>
-            <button className="text-base text-foreground hover:text-muted-foreground transition-colors underline-offset-4 hover:underline cursor-pointer">
+            </Link>
+            <a 
+              href="https://cal.com/flomotive/booking-ledger-demo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-base text-foreground hover:text-muted-foreground transition-colors underline-offset-4 hover:underline cursor-pointer"
+            >
               Book A Demo
-            </button>
+            </a>
           </div>
         </div>
       </Container>
