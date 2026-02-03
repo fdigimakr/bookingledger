@@ -1,0 +1,44 @@
+{
+  "name": "vo-ai-landing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "images:webp": "node scripts/convert-to-webp.mjs",
+    "lint": "next lint",
+    "start": "next start",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "aos": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "fs": "latest",
+    "lucide-react": "^0.454.0",
+    "next": "14.2.16",
+    "next-themes": "latest",
+    "path": "latest",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.9",
+    "@types/aos": "^3.0.7",
+    "@types/node": "^22",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.18",
+    "fast-glob": "^3.3.3",
+    "globby": "^15.0.0",
+    "postcss": "^8.5",
+    "sharp": "^0.34.4",
+    "tailwindcss": "^4.1.9",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.18.1+sha512.77a884a165cbba2d8d1c19e3b4880eee6d2fcabd0d879121e282196b80042351d5eb3ca0935fa599da1dc51265cc68816ad2bddd2a2de5ea9fdf92adbec7cd34"
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Fugi';
+    src: url('Fugi.woff2') format('woff2'),
+        url('Fugi.woff') format('woff'),
+        url('Fugi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fugi';
+    src: url('Fugi_1.woff2') format('woff2'),
+        url('Fugi_1.woff') format('woff'),
+        url('Fugi_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
